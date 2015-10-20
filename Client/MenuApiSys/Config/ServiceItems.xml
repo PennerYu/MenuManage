@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Services>
+  <!--<SyncServices>
+    <Service Type="Penner.ServicesFramework.Communication.CommunicationFactory,Penner.ServicesFramework">
+      <Extensions>
+        <FrontExtensions>
+          <Extension Type="Penner.ComicsManage.Core.Extension.SeriFrontExtension,Penner.ComicsManage.Core"></Extension>
+        </FrontExtensions>
+        <AfterExtensions>
+          <Extension Type="Penner.ComicsManage.Core.Extension.SeriAfterExtension,Penner.ComicsManage.Core"></Extension>
+        </AfterExtensions>
+      </Extensions>
+    </Service>
+  </SyncServices>-->
+  <SyncServices>
+    <Service Type="Penner.ServicesFramework.Log4net.Log4netFactory,Penner.ServicesFramework"></Service>
+    <Service Type="Penner.ServicesFramework.ActiveRecord.ActiveRecordFactory,Penner.ServicesFramework"></Service>
+    <Service Type="Penner.ServicesFramework.NHibernate.NHibernateFactory,Penner.ServicesFramework"></Service>
+    <!--<Service Type="Penner.ServicesFramework.QuartzNet.QuartzFactory,Penner.ServicesFramework">
+      <Extensions>
+        <AfterExtensions>
+          <Extension Type="Penner.ComicsManage.Core.Extension.DataBaseAfterExtension,Penner.ComicsManage.Core"></Extension>
+        </AfterExtensions>
+      </Extensions>
+    </Service>-->
+  </SyncServices>
+  <!--<SyncServices>
+    <Service Type="Penner.ServicesFramework.ConsoleCommand.ConsoleCommandFactory,Penner.ServicesFramework"></Service>
+  </SyncServices>-->
+</Services>

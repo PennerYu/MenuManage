@@ -1,0 +1,26 @@
+﻿<%@ WebHandler Language="C#" Class="Pages" %>
+
+using System;
+using System.Web;
+
+using Penner.CommonManage.Client;
+using Penner.MenuManage.InternalServices.Page;
+using PennerImpl = Penner.MenuManage.InternalServices.Impl.Page;
+
+public class Pages : IHttpHandler {
+    
+    public void ProcessRequest (HttpContext context) {
+
+        var page = new PennerImpl.Pages();
+        var fileter = new PagesFilter();
+
+        context.Response.Write(page.MenuPages(fileter));
+    }
+ 
+    public bool IsReusable {
+        get {
+            return false;
+        }
+    }
+
+}

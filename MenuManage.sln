@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{3B7AC06B-916C-4C97-8FDA-BEB9F750A55A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{480282E5-383F-4B85-9A80-C8BDCD5AB2F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuViewSys", "Client\MenuViewSys\MenuViewSys.csproj", "{C42A4E5E-9D0E-4FE1-A3A2-E500127E19EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Penner.ServicesFramework", "Penner.ServicesFramework\Penner.ServicesFramework.csproj", "{A845B323-9051-4AE8-9F5D-326E8416D6AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Penner.MenuManage.Core", "Server\Penner.MenuManage.Core\Penner.MenuManage.Core.csproj", "{B3FB6530-E7A0-4133-8988-DE4C3B98FBE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Penner.NHibernateActiveRecord", "Penner.NHibernateActiveRecord\Penner.NHibernateActiveRecord.csproj", "{E89F702F-6553-4EED-A52E-3E2647674209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Penner.MenuManage.InternalServices", "Client\Penner.MenuManage.InternalServices\Penner.MenuManage.InternalServices.csproj", "{EC52A390-6194-4768-BD86-9009863C29EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Penner.MenuManage.InternalServices.Impl", "Server\Penner.MenuManage.InternalServices.Impl\Penner.MenuManage.InternalServices.Impl.csproj", "{223D8EC5-AFF1-42CC-9211-0D94227387E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Penner.CommonManage.Client", "Client\Penner.MenuManage.Client\Penner.CommonManage.Client.csproj", "{583DF800-BB50-4A16-9506-A1499BAD1476}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MenuApiSys", "http://localhost:12694", "{0EFC4108-9FF5-4071-AB2D-346A78D76867}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{583df800-bb50-4a16-9506-a1499bad1476}|Penner.CommonManage.Client.dll;{ec52a390-6194-4768-bd86-9009863c29ee}|Penner.MenuManage.InternalServices.dll;{223d8ec5-aff1-42cc-9211-0d94227387e5}|Penner.MenuManage.InternalServices.Impl.dll;{a845b323-9051-4ae8-9f5d-326e8416d6ae}|Penner.ServicesFramework.dll;{B3FB6530-E7A0-4133-8988-DE4C3B98FBE3}|Penner.MenuManage.Core.dll;{E89F702F-6553-4EED-A52E-3E2647674209}|Penner.NHibernateActiveRecord.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_12694"
+		Debug.AspNetCompiler.PhysicalPath = "Client\MenuApiSys\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_12694\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_12694"
+		Release.AspNetCompiler.PhysicalPath = "Client\MenuApiSys\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_12694\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Client\MenuApiSys\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C42A4E5E-9D0E-4FE1-A3A2-E500127E19EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C42A4E5E-9D0E-4FE1-A3A2-E500127E19EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C42A4E5E-9D0E-4FE1-A3A2-E500127E19EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C42A4E5E-9D0E-4FE1-A3A2-E500127E19EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A845B323-9051-4AE8-9F5D-326E8416D6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A845B323-9051-4AE8-9F5D-326E8416D6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A845B323-9051-4AE8-9F5D-326E8416D6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A845B323-9051-4AE8-9F5D-326E8416D6AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3FB6530-E7A0-4133-8988-DE4C3B98FBE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3FB6530-E7A0-4133-8988-DE4C3B98FBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3FB6530-E7A0-4133-8988-DE4C3B98FBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3FB6530-E7A0-4133-8988-DE4C3B98FBE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E89F702F-6553-4EED-A52E-3E2647674209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E89F702F-6553-4EED-A52E-3E2647674209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E89F702F-6553-4EED-A52E-3E2647674209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E89F702F-6553-4EED-A52E-3E2647674209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC52A390-6194-4768-BD86-9009863C29EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC52A390-6194-4768-BD86-9009863C29EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC52A390-6194-4768-BD86-9009863C29EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC52A390-6194-4768-BD86-9009863C29EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{223D8EC5-AFF1-42CC-9211-0D94227387E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{223D8EC5-AFF1-42CC-9211-0D94227387E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{223D8EC5-AFF1-42CC-9211-0D94227387E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{223D8EC5-AFF1-42CC-9211-0D94227387E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{583DF800-BB50-4A16-9506-A1499BAD1476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583DF800-BB50-4A16-9506-A1499BAD1476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{583DF800-BB50-4A16-9506-A1499BAD1476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{583DF800-BB50-4A16-9506-A1499BAD1476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EFC4108-9FF5-4071-AB2D-346A78D76867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EFC4108-9FF5-4071-AB2D-346A78D76867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EFC4108-9FF5-4071-AB2D-346A78D76867}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EFC4108-9FF5-4071-AB2D-346A78D76867}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3FB6530-E7A0-4133-8988-DE4C3B98FBE3} = {3B7AC06B-916C-4C97-8FDA-BEB9F750A55A}
+		{223D8EC5-AFF1-42CC-9211-0D94227387E5} = {3B7AC06B-916C-4C97-8FDA-BEB9F750A55A}
+		{C42A4E5E-9D0E-4FE1-A3A2-E500127E19EE} = {480282E5-383F-4B85-9A80-C8BDCD5AB2F2}
+		{EC52A390-6194-4768-BD86-9009863C29EE} = {480282E5-383F-4B85-9A80-C8BDCD5AB2F2}
+		{583DF800-BB50-4A16-9506-A1499BAD1476} = {480282E5-383F-4B85-9A80-C8BDCD5AB2F2}
+		{0EFC4108-9FF5-4071-AB2D-346A78D76867} = {480282E5-383F-4B85-9A80-C8BDCD5AB2F2}
+	EndGlobalSection
+EndGlobal

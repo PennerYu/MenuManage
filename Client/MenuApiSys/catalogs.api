@@ -1,0 +1,26 @@
+﻿<%@ WebHandler Language="C#" Class="catalogs" %>
+
+using System;
+using System.Web;
+
+using Penner.CommonManage.Client;
+using Penner.MenuManage.InternalServices.Catalog;
+using Penner.MenuManage.InternalServices.Impl.Catalog;
+
+public class catalogs : IHttpHandler {
+    
+    public void ProcessRequest (HttpContext context) {
+
+        var catalog = new Catalogs();
+        var filter = new CatalogFilter();
+
+        context.Response.Write(catalog.MenuCatalog(filter));
+    }
+ 
+    public bool IsReusable {
+        get {
+            return false;
+        }
+    }
+
+}
